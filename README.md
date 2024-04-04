@@ -1,7 +1,7 @@
 # My Portfolio
 
 ### Hosted on Github
-#### Check it out : https://navassherif98.github.io/Portfolio/
+#### Check it out : https://gabrielevansmwatha.github.io/Portfolio/
 
-### Hosted on Heroku
-#### Check it out : https://navas-portfolio.herokuapp.com/
+### Hosted on Netlify
+#### Check it out : https://evanswaitindiportfolio.netlify.app/
