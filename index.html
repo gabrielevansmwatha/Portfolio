@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="ootDxYjotCW8uPE6pws7Np7mOCpHvtSzzq25vuBj3L8" />
+    <meta name="description" content="Evans Mwatha - Full-Stack Developer | MERN Stack Specialist | Machine Learning Enthusiast">
+    <meta name="keywords" content="software engineer, full-stack developer, machine learning, MERN stack, python, javascript, react">
+    <meta name="author" content="Evans Mwatha">
+    
+    <meta property="og:title" content="Evans Mwatha - Software Engineer Portfolio">
+    <meta property="og:description" content="Full-Stack Developer specializing in MERN Stack, Machine Learning, and Cloud Technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="assets/img/blog/Me.png">
+    
+    <title>Evans Mwatha | Software Engineer</title>
+    <link rel="icon" href="assets/img/blog/icon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-900 text-white min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800/90 backdrop-blur-sm z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img src="assets/img/blog/icon.png" alt="Logo" class="h-9 w-9 rounded-full">
+                    <span class="text-xl font-semibold">Waitindi Evans</span>
+                </div>
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#home" class="hover:text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full">Home</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full">About</a>
+                    <a href="#skills" class="hover:text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full">Skills</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full">Projects</a>
+                    <a href="#testimonials" class="hover:text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full">Testimonials</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full">Contact</a>
+                    <a href="../EM Resume.pdf" download class="ml-4 bg-blue-500 hover:bg-blue-600 text-white font-medium py-1.5 px-4 rounded-md transition-colors flex items-center gap-2">
+                        <i class="fas fa-download text-sm"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-200 hover:text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 animate-fade-in">
+                <a href="#home" class="block py-2 px-4 hover:bg-gray-700 rounded-md transition-colors">Home</a>
+                <a href="#about" class="block py-2 px-4 hover:bg-gray-700 rounded-md transition-colors">About</a>
+                <a href="#skills" class="block py-2 px-4 hover:bg-gray-700 rounded-md transition-colors">Skills</a>
+                <a href="#projects" class="block py-2 px-4 hover:bg-gray-700 rounded-md transition-colors">Projects</a>
+                <a href="#testimonials" class="block py-2 px-4 hover:bg-gray-700 rounded-md transition-colors">Testimonials</a>
+                <a href="#contact" class="block py-2 px-4 hover:bg-gray-700 rounded-md transition-colors">Contact</a>
+                <a href="../EM Resume.pdf" download class="mt-3 ml-4 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition-colors inline-flex items-center gap-2">
+                    <i class="fas fa-download text-sm"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+        </div>
+    </div>
+</section>
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex flex-col justify-center bg-cover bg-center bg-fixed relative" style="background-image: url('assets/img/blog/bgwall.jpeg')">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/40"></div>
+    <div class="relative z-10 container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+                Hi, I'm <span class="text-blue-500">Evans Mwatha</span>
+            </h1>
+            <div class="h-1 w-20 bg-blue-500 mb-6 mx-auto md:mx-0"></div>
+            <div class="text-xl md:text-2xl text-gray-200 min-h-[2.5rem] mb-6">
+                <span id="typed-text" class="font-medium"></span>
+            <span class="animate-blink">|</span>
+            </div>
+            <p class="text-gray-300 mb-8 text-lg max-w-xl mx-auto md:mx-0">
+                I craft robust, scalable solutions with modern technologies to solve complex problems and deliver exceptional user experiences.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+                <a href="#contact" class="bg-transparent hover:bg-white/10 text-white border border-white/30 px-6 py-3 rounded-md font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+            <div class="flex justify-center md:justify-start mt-10 gap-6">
+                <a href="https://github.com/gabrielevansmwatha" target="_blank" class="text-gray-300 hover:text-white transition-colors" aria-label="GitHub Profile">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/evans-mwatha-3668501b6" target="_blank" class="text-gray-300 hover:text-white transition-colors" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://www.instagram.com/gabriel_evans_mwatha/" target="_blank" class="text-gray-300 hover:text-white transition-colors" aria-label="Instagram Profile">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="mailto:gabrielevans418@gmail.com" class="text-gray-300 hover:text-white transition-colors" aria-label="Email Me">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+            <div class="relative">
+                <div class="absolute inset-0 bg-blue-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+                <img src="assets/img/blog/Me.png" alt="Evans Mwatha" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500 shadow-xl relative z-10">
+                <div class="absolute -bottom-4 -right-4 bg-gray-900 rounded-lg p-3 shadow-lg">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <span class="text-sm font-medium">Available for hire</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+        <a href="#about" class="animate-bounce block">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </a>
+    </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-2/5">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 inline-block relative">
+                        About Me
+                        <div class="h-1 w-1/3 bg-blue-500 absolute -bottom-2 left-0"></div>
+                    </h2>
+                    <p class="text-lg mb-6">I'm Waitindi Evans Mwatha, a passionate software engineer with expertise in building efficient and scalable solutions.</p>
+                    <p class="mb-6">I specialize in full-stack development, machine learning, and cloud technologies. My goal is to create impactful software that solves real-world problems while continuously learning and adapting to new technologies.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-blue-500 text-3xl mb-2"><i class="fas fa-code"></i></div>
+                            <h3 class="font-semibold text-lg mb-1">Clean Code</h3>
+                            <p class="text-gray-400 text-sm">Writing maintainable, well-tested code is my priority</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-blue-500 text-3xl mb-2"><i class="fas fa-rocket"></i></div>
+                            <h3 class="font-semibold text-lg mb-1">Fast Learner</h3>
+                            <p class="text-gray-400 text-sm">I adapt quickly to new technologies and challenges</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-blue-500 text-3xl mb-2"><i class="fas fa-users"></i></div>
+                            <h3 class="font-semibold text-lg mb-1">Team Player</h3>
+                            <p class="text-gray-400 text-sm">I thrive in collaborative environments and code reviews</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-blue-500 text-3xl mb-2"><i class="fas fa-lightbulb"></i></div>
+                            <h3 class="font-semibold text-lg mb-1">Problem Solver</h3>
+                            <p class="text-gray-400 text-sm">I enjoy breaking down complex problems into solutions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <a href="../EM Resume.pdf" download class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors flex items-center gap-2 w-full md:w-auto justify-center">
+                            <i class="fas fa-file-pdf"></i> Download Full Resume
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-3/5">
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 pb-4 border-b border-gray-700">Experience Highlights</h3>
+                        
+                        <div class="space-y-8">
+                            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-blue-500">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-500 transform -translate-x-1/2"></div>
+                                <h4 class="text-xl font-medium">Software Developer Tutor</h4>
+                                <p class="text-blue-400 mb-2">Kenya Institute of Software Engineering · April 2022 - September 2022</p>
+                                <p class="text-gray-300 mb-3">Mentored students in web development fundamentals, creating practical learning projects that increased student retention.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">HTML5</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">CSS3</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">JavaScript</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">ReactJS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-blue-500">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-500 transform -translate-x-1/2"></div>
+                                <h4 class="text-xl font-medium">I.T Support Specialist</h4>
+                                <p class="text-blue-400 mb-2">Kenyatta University · May 2023 - August 2023</p>
+                                <p class="text-gray-300 mb-3">Provided technical support for faculty members and staff, resolving an average of 5 tickets daily. Implemented network optimization protocols that reduced system downtime.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">Networking</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">Troubleshooting</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">Technical Support</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">Network Configuration</span>
+                                </div>
+                            </div>
+                            
+                            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-blue-500">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-500 transform -translate-x-1/2"></div>
+                                <h4 class="text-xl font-medium">Software Engineering Intern</h4>
+                                <p class="text-blue-400 mb-2">Upesi Communications · June 2023 - September 2023</p>
+                                <p class="text-gray-300 mb-3">Spearheaded the integration of M-Pesa Daraja API into the company's payment platform. Collaborated with the backend team to develop and implement an automated billing system</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">Python</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">Django</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">Mpesa-Daraja API</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">ReactJS</span>
+                                    <span class="px-2 py-1 bg-gray-700 rounded-md text-xs font-medium">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Skills</h2>
+        <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">My technical toolkit includes both front-end and back-end technologies, with a focus on creating scalable, maintainable solutions.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Frontend Development -->
+            <div class="bg-gray-700 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-laptop-code"></i></div>
+                <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
+                <p class="text-gray-400 mb-6">Building responsive, accessible user interfaces with modern frameworks and tools.</p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>HTML5/CSS3</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 95%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>JavaScript (ES6+)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 90%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>React.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>TailwindCSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="bg-gray-700 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-server"></i></div>
+                <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
+                <p class="text-gray-400 mb-6">Developing robust, scalable server-side applications and APIs.</p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                <span>Django</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 80%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>RESTful API</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>SQL/PostgreSQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DevOps & Tools -->
+            <div class="bg-gray-700 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-tools"></i></div>
+                <h3 class="text-xl font-semibold mb-3">DevOps & Tools</h3>
+                <p class="text-gray-400 mb-6">Implementing CI/CD pipelines and utilizing modern development tools.</p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Git/GitHub</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 90%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Docker</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 75%"></div>
+                        </div>
+            </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Linux</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 80%"></div>
+                        </div>
+            </div>
+
+                    </div>
+            </div>
+            </div>
+            </div>
+
+        <!-- Additional Skills -->
+        <h3 class="text-2xl font-semibold text-center mb-8">Additional Technologies</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
+
+            <!-- Data Analysis -->
+            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors group" title="Data Analysis">
+                <img src="assets/icons/data.svg" alt="Data Analysis" class="w-12 h-12 mb-3 group-hover:scale-110 transition-transform">
+                <span>Data Analysis</span>
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors group" title="PostgreSQL">
+                <img src="assets/icons/chain.svg" alt="BlockChain" class="w-12 h-12 mb-3 group-hover:scale-110 transition-transform">
+                <span>BlockChain & Web3</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors group" title="PostgreSQL">
+                <img src="assets/icons/mobileapp.svg" alt="Mobile" class="w-12 h-12 mb-3 group-hover:scale-110 transition-transform">
+                <span>Mobile Application Development</span>
+            </div>
+        </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Featured Projects</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Here are some of my notable projects that demonstrate my technical capabilities and problem-solving skills.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mpesa Daraja API Integration -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/img/projects/mpesa api.png" alt="Mpesa Daraja API Integration" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 m-2 rounded">API Integration</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">Python</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">Django</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">RESTful API</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Mpesa Daraja API Integration</h3>
+                        <p class="text-gray-400 mb-5">A comprehensive implementation of the Safaricom M-Pesa Daraja API, enabling secure mobile payments in Django applications with transaction validation and error handling.</p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/gabrielevansmwatha/Python-Django-Daraja-API" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i> 
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smart Greenhouse Monitoring -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/img/projects/smart greenhouse.png" alt="Smart Greenhouse Monitoring" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-bold px-3 py-1 m-2 rounded">IoT</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">Arduino</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">IoT</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">Blynk</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Smart Greenhouse Monitoring</h3>
+                        <p class="text-gray-400 mb-5">An IoT-based system that monitors temperature, humidity, and soil moisture in greenhouses, featuring real-time data visualization and automated alerts for optimal plant growth conditions.</p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/gabrielevansmwatha/Temperature-Humidity-And-Soil-Moisture-monitoring-using-Blynk" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i> 
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="Project Details">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smart Car Parking System -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/img/projects/smart car parking.png" alt="Smart Car Parking System" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-bold px-3 py-1 m-2 rounded">Embedded Systems</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">ESP8266</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">IoT</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">Blynk</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Smart Car Parking System</h3>
+                        <p class="text-gray-400 mb-5">An automated parking management system using ESP8266 and ultrasonic sensors to detect available parking spaces, delivering real-time occupancy updates via a mobile application.</p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/gabrielevansmwatha/Smart-Car-Parking-System-Using-Esp8266-and-Blynk" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i> 
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="Project Details">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/gabrielevansmwatha" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors">
+                    <i class="fab fa-github"></i> View More on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Testimonials</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">What colleagues and clients say about working with me.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg relative">
+                    <div class="text-blue-500 text-5xl absolute -top-5 -left-2">"</div>
+                    <div class="pt-4">
+                        <p class="italic text-gray-300 mb-6">Evans is a highly skilled developer who consistently delivers clean, well-organized code. His attention to detail and problem-solving abilities made him an invaluable asset to our team.</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                <!-- Replace with actual profile image if available -->
+                                <div class="w-full h-full flex items-center justify-center bg-blue-500 text-white text-xl font-bold">J</div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Sarah Wambui</h4>
+                                <p class="text-sm text-gray-400">Senior Developer, K.I.S.E</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg relative">
+                    <div class="text-blue-500 text-5xl absolute -top-5 -left-2">"</div>
+                    <div class="pt-4">
+                        <p class="italic text-gray-300 mb-6">Working with Evans on our API integration project was a fantastic experience. He quickly grasped complex requirements and delivered elegant solutions ahead of schedule.</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                <!-- Replace with actual profile image if available -->
+                                <div class="w-full h-full flex items-center justify-center bg-green-500 text-white text-xl font-bold">M</div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">George M.</h4>
+                                <p class="text-sm text-gray-400">I.T Director, Upesi Communications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-700 p-6 rounded-lg relative">
+                    <div class="text-blue-500 text-5xl absolute -top-5 -left-2">"</div>
+                    <div class="pt-4">
+                        <p class="italic text-gray-300 mb-6">Evans has a remarkable ability to translate technical concepts into user-friendly applications. His work on our greenhouse monitoring system exceeded our expectations.</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                <!-- Replace with actual profile image if available -->
+                                <div class="w-full h-full flex items-center justify-center bg-purple-500 text-white text-xl font-bold">S</div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Michael Wambua</h4>
+                                <p class="text-sm text-gray-400">Software Engineer, Kenyatta University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get In Touch</h2>
+                <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">I'm currently available for freelance work or full-time opportunities. Let's collaborate on your next project!</p>
+                
+                <div class="grid md:grid-cols-5 gap-8">
+                    <!-- Contact Info -->
+                    <div class="md:col-span-2 bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-6 pb-3 border-b border-gray-700">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="text-blue-500 text-xl mt-1"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Email</h4>
+                                    <a href="mailto:gabrielevans418@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors">gabrielevans418@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="text-blue-500 text-xl mt-1"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Location</h4>
+                                    <p class="text-gray-300">Gatundu Road, Kiambu<br>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="text-blue-500 text-xl mt-1"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Phone</h4>
+                                    <a href="tel:+254768598672" class="text-gray-300 hover:text-blue-400 transition-colors">+254 768598672</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-3">Connect with me</h4>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/gabrielevansmwatha" target="_blank" class="text-gray-300 hover:text-white transition-colors" aria-label="GitHub">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/evans-mwatha-3668501b6" target="_blank" class="text-gray-300 hover:text-white transition-colors" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin text-xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/gabriel_evans_mwatha/" target="_blank" class="text-gray-300 hover:text-white transition-colors" aria-label="Instagram">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank" class="text-gray-300 hover:text-white transition-colors" aria-label="Twitter">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="md:col-span-3 bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-6 pb-3 border-b border-gray-700">Send Me a Message</h3>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                                    <label for="name" class="block text-sm font-medium mb-2">Name <span class="text-red-500">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                <div>
+                                    <label for="email" class="block text-sm font-medium mb-2">Email <span class="text-red-500">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="Your email" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                            
+                <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Message <span class="text-red-500">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors w-full flex items-center justify-center gap-2">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="assets/img/blog/icon.png" alt="Logo" class="h-9 w-9 rounded-full">
+                        <span class="text-xl font-semibold">Waitindi Evans</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Software Engineer specializing in full-stack development, Machine learning, Data Analysis, and Cloud technologies.</p>
+                    <p class="text-gray-400">Based in Nairobi, Kenya</p>
+                </div>
+                
+                <div class="md:text-center">
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <nav class="flex flex-col space-y-2">
+                        <a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                        <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                        <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+                        <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                        <a href="#testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a>
+                        <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                    </nav>
+                </div>
+                
+                <div class="md:text-right">
+                    <h3 class="text-lg font-semibold mb-4">Let's Connect</h3>
+                    <div class="flex md:justify-end gap-6 mb-4">
+                        <a href="https://github.com/gabrielevansmwatha" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/evans-mwatha-3668501b6" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gabriel_evans_mwatha/" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="mailto:gabrielevans418@gmail.com" class="text-gray-400 hover:text-white transition-colors" aria-label="Email">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Feel free to reach out for collaborations or just a friendly chat!</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Evans Mwatha. All rights reserved.</p>
+                <p class="text-gray-500 text-sm mt-2">Designed with <span class="text-red-400">❤</span> using HTML, CSS, Tailwind and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/3a39d1a4dd.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const typedTextElement = document.getElementById('typed-text');
+        const navbar = document.getElementById('navbar');
+        
+        // Mobile menu toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                
+                if (target) {
+                    // Smooth scroll to target
+                    window.scrollTo({
+                        top: target.offsetTop - 80, // Adjust for header height
+                    behavior: 'smooth'
+                });
+                    
+                    // Close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+                    }
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('text-blue-400');
+                    });
+                    this.classList.add('text-blue-400');
+                }
+            });
+        });
+        
+        // Typing effect
+        const titles = [
+            'Full-Stack Developer',
+            'Data Analyst',
+            'Machine Learning Engineer',
+            'Cloud & DevOps',
+        ];
+        let titleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            if (!typedTextElement) return;
+            const currentTitle = titles[titleIndex];
+            if (!isDeleting && charIndex <= currentTitle.length) {
+                typedTextElement.textContent = currentTitle.substring(0, charIndex);
+                charIndex++;
+                setTimeout(type, 100);
+            } else if (isDeleting && charIndex >= 0) {
+                typedTextElement.textContent = currentTitle.substring(0, charIndex);
+                charIndex--;
+                setTimeout(type, 50);
+            } else if (!isDeleting && charIndex > currentTitle.length) {
+                isDeleting = true;
+                setTimeout(type, 1500);
+            } else if (isDeleting && charIndex < 0) {
+                isDeleting = false;
+                titleIndex = (titleIndex + 1) % titles.length;
+                setTimeout(type, 500);
+            }
+        }
+
+        // Scroll-based animations
+        function checkScroll() {
+            // Navbar shadow on scroll
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.add('bg-gray-800/95');
+                navbar.classList.remove('bg-gray-800/90');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.add('bg-gray-800/90');
+                navbar.classList.remove('bg-gray-800/95');
+            }
+            
+            // Animate sections on scroll
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (sectionTop < windowHeight * 0.75) {
+                    section.classList.add('visible');
+                }
+            });
+            
+            // Update active nav link based on scroll position
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('text-blue-400');
+                        link.classList.remove('after:w-full');
+                        
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('text-blue-400');
+                            link.classList.add('after:w-full');
+                        }
+                    });
+                }
+            });
+        }
+        
+        // Form submission (you can customize this to connect to a backend)
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // You can add form submission logic here
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            });
+        }
+
+        // Initialize animations and events
+        window.onload = function() {
+            setTimeout(type, 500);
+            checkScroll();
+            
+            // Add initial visibility to the hero section
+            const heroSection = document.querySelector('#home');
+            if (heroSection) {
+                heroSection.classList.add('visible');
+            }
+        };
+        
+        window.addEventListener('scroll', checkScroll);
+    </script>
+</body>
+</html>
