@@ -442,6 +442,32 @@
                         </div>
                     </div>
                 </div>
+                <!--Billing system-->
+                 <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/img/projects/mpesa api.png" alt="Mpesa Daraja API Integration" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 m-2 rounded">Wi-fi Billing System with Mpesa STK push</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">React</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">TypeScript</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md text-xs font-medium">API</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Wi-fi Billing System with Mpesa STK push</h3>
+                        <p class="text-gray-400 mb-5">A comprehensive implementation of the Safaricom M-Pesa Daraja API, enabling secure mobile payments in Django applications with transaction validation and error handling.</p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/gabrielevansmwatha/Python-Django-Daraja-API" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i> 
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- Smart Greenhouse Monitoring -->
                 <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
@@ -628,39 +654,52 @@
                     </div>
                     
                     <!-- Contact Form -->
-                    <div class="md:col-span-3 bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-6 pb-3 border-b border-gray-700">Send Me a Message</h3>
-                        
-                        <form id="contact-form" class="space-y-6">
-                            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                                    <label for="name" class="block text-sm font-medium mb-2">Name <span class="text-red-500">*</span></label>
-                                    <input type="text" id="name" name="name" placeholder="Your name" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                </div>
-                <div>
-                                    <label for="email" class="block text-sm font-medium mb-2">Email <span class="text-red-500">*</span></label>
-                                    <input type="email" id="email" name="email" placeholder="Your email" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
-                                <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                </div>
-                            
-                <div>
-                                <label for="message" class="block text-sm font-medium mb-2">Message <span class="text-red-500">*</span></label>
-                                <textarea id="message" name="message" rows="5" placeholder="Your message" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors w-full flex items-center justify-center gap-2">
-                                <i class="fas fa-paper-plane"></i> Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+                   <div class="md:col-span-3 bg-gray-800 p-6 rounded-lg">
+  <h3 class="text-xl font-semibold mb-6 pb-3 border-b border-gray-700">Send Me a Message</h3>
+
+  <form 
+    name="contact" 
+    method="POST" 
+    data-netlify="true" 
+    netlify-honeypot="bot-field" 
+    action="/thank-you" 
+    class="space-y-6"
+  >
+    <!-- Hidden input to identify the form -->
+    <input type="hidden" name="form-name" value="contact" />
+
+    <!-- Honeypot field (anti-spam) -->
+    <p class="hidden">
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <label for="name" class="block text-sm font-medium mb-2">Name <span class="text-red-500">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your name" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium mb-2">Email <span class="text-red-500">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Your email" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+      </div>
+    </div>
+
+    <div>
+      <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+    </div>
+
+    <div>
+      <label for="message" class="block text-sm font-medium mb-2">Message <span class="text-red-500">*</span></label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+    </div>
+
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors w-full flex items-center justify-center gap-2">
+      <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+  </form>
+</div>
+
     </section>
 
     <!-- Footer -->
