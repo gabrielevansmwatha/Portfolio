@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRG9L2722X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZRG9L2722X');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="ootDxYjotCW8uPE6pws7Np7mOCpHvtSzzq25vuBj3L8" />
+    <meta name="description" content="Evans Mwatha - Full-Stack Developer | MERN Stack Specialist | Machine Learning Enthusiast">
+    <meta name="keywords" content="software engineer, full-stack developer, machine learning, MERN stack, python, javascript, react">
+    <meta name="author" content="Evans Mwatha">
+
+    <meta property="og:title" content="Evans Mwatha - Software Engineer Portfolio">
+    <meta property="og:description" content="Full-Stack Developer specializing in MERN Stack, Machine Learning, and Cloud Technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evansmwatha.netlify.app/">
+    <meta property="og:image" content="assets/img/blog/Me.png">
+
+    <title>Why I Chose a Static Site for My Portfolio | Evans Mwatha</title>
+    <link rel="icon" href="assets/img/blog/icon.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/light.css">
+
+</head>
+<body class="bg-gray-900 text-white min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800/90 backdrop-blur-sm z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img src="assets/img/blog/icon.png" alt="Logo" class="h-9 w-9 rounded-full">
+                    <span class="text-xl font-semibold">Waitindi Evans</span>
+                </div>
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="index.html" class="hover:text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full">Home</a>
+                    <a href="blog.html" class="text-blue-400 transition-colors py-1 px-2 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-blue-400">Blog</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-200 hover:text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 animate-fade-in">
+                <a href="index.html" class="block py-2 px-4 hover:bg-gray-700 rounded-md transition-colors">Home</a>
+                <a href="blog.html" class="block py-2 px-4 bg-gray-700 rounded-md transition-colors">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-20 mt-16">
+        <article class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Why I Chose a Static Site for My Portfolio</h1>
+            <p class="text-gray-400 mb-8">Posted on <time datetime="2025-08-10">August 10, 2025</time></p>
+
+            <div class="prose prose-lg lg:prose-xl text-gray-300 mx-auto">
+                <p>In a world where dynamic, database-driven websites are the norm, I made a conscious decision to build my portfolio as a static site. This post explores the reasoning behind that choice, and why I believe it's a powerful approach for personal websites and portfolios.</p>
+                <h2 class="text-3xl font-semibold mt-12 mb-4">The Need for Speed</h2>
+                <p>One of the most significant advantages of a static site is its performance. With no database queries or server-side processing to slow things down, the site loads incredibly fast. The files are pre-built and served directly from a CDN, which means users get to see the content almost instantly. This is a crucial factor for user experience and SEO.</p>
+                <h2 class="text-3xl font-semibold mt-12 mb-4">Security and Simplicity</h2>
+                <p>Static sites are inherently more secure than dynamic sites. With no database to hack and no server-side vulnerabilities to exploit, the attack surface is significantly reduced. This simplicity also extends to the development process. I can focus on the frontend without having to worry about managing a complex backend infrastructure.</p>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-800 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2025 Evans Mwatha. All rights reserved.</p>
+                <p class="text-gray-500 text-sm mt-2">Designed with <span class="text-red-400">❤</span> using HTML, CSS, Tailwind and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
