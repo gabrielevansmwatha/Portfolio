@@ -1,0 +1,44 @@
+{
+  "name": "excellence-academy-school-management",
+  "version": "1.0.0",
+  "description": "A comprehensive School Management System with role-based dashboards, responsive design, and modern UI/UX",
+  "main": "school-index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build process required for static HTML/CSS/JS'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "school",
+    "education",
+    "management",
+    "dashboard",
+    "responsive",
+    "tailwindcss",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "Excellence Academy Development Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/school-management-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/school-management-system/issues"
+  },
+  "homepage": "https://github.com/your-username/school-management-system#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

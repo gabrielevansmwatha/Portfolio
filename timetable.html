@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable - Excellence Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="school-style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">Excellence Academy</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="school-index.html" class="text-gray-600 hover:text-gray-800 transition-colors">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                    <a href="dashboard.html" class="text-gray-600 hover:text-gray-800 transition-colors">
+                        <i class="fas fa-tachometer-alt mr-2"></i>Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Timetable Section -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Class Timetable</h1>
+            <p class="text-gray-600">Academic Year 2024 - Grade 10</p>
+        </div>
+
+        <!-- Grade Selection -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg mb-8">
+            <h3 class="text-lg font-bold mb-4 text-gray-800">Select Grade</h3>
+            <div class="flex flex-wrap gap-4">
+                <button class="grade-btn bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300">Grade 10</button>
+                <button class="grade-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-gray-300">Grade 9</button>
+                <button class="grade-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-gray-300">Grade 11</button>
+                <button class="grade-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-gray-300">Grade 12</button>
+            </div>
+        </div>
+
+        <!-- Timetable Table -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-600">Time</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-600">Monday</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-600">Tuesday</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-600">Wednesday</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-600">Thursday</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-600">Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-600">8:00 - 9:00</td>
+                            <td class="px-6 py-4">
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Mathematics</h4>
+                                    <p class="text-sm text-gray-600">Mr. Johnson</p>
+                                    <p class="text-xs text-gray-500">Room 101</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Science</h4>
+                                    <p class="text-sm text-gray-600">Ms. Davis</p>
+                                    <p class="text-xs text-gray-500">Lab 2</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-purple-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">English</h4>
+                                    <p class="text-sm text-gray-600">Mrs. Wilson</p>
+                                    <p class="text-xs text-gray-500">Room 205</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-orange-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">History</h4>
+                                    <p class="text-sm text-gray-600">Mr. Brown</p>
+                                    <p class="text-xs text-gray-500">Room 103</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-red-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Physical Education</h4>
+                                    <p class="text-sm text-gray-600">Coach Smith</p>
+                                    <p class="text-xs text-gray-500">Gym</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-600">9:15 - 10:15</td>
+                            <td class="px-6 py-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Science</h4>
+                                    <p class="text-sm text-gray-600">Ms. Davis</p>
+                                    <p class="text-xs text-gray-500">Lab 2</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Mathematics</h4>
+                                    <p class="text-sm text-gray-600">Mr. Johnson</p>
+                                    <p class="text-xs text-gray-500">Room 101</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-orange-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">History</h4>
+                                    <p class="text-sm text-gray-600">Mr. Brown</p>
+                                    <p class="text-xs text-gray-500">Room 103</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-purple-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">English</h4>
+                                    <p class="text-sm text-gray-600">Mrs. Wilson</p>
+                                    <p class="text-xs text-gray-500">Room 205</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Mathematics</h4>
+                                    <p class="text-sm text-gray-600">Mr. Johnson</p>
+                                    <p class="text-xs text-gray-500">Room 101</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-600">10:30 - 11:30</td>
+                            <td class="px-6 py-4">
+                                <div class="bg-purple-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">English</h4>
+                                    <p class="text-sm text-gray-600">Mrs. Wilson</p>
+                                    <p class="text-xs text-gray-500">Room 205</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-orange-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">History</h4>
+                                    <p class="text-sm text-gray-600">Mr. Brown</p>
+                                    <p class="text-xs text-gray-500">Room 103</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Science</h4>
+                                    <p class="text-sm text-gray-600">Ms. Davis</p>
+                                    <p class="text-xs text-gray-500">Lab 2</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Mathematics</h4>
+                                    <p class="text-sm text-gray-600">Mr. Johnson</p>
+                                    <p class="text-xs text-gray-500">Room 101</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Science</h4>
+                                    <p class="text-sm text-gray-600">Ms. Davis</p>
+                                    <p class="text-xs text-gray-500">Lab 2</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-600">11:45 - 12:45</td>
+                            <td class="px-6 py-4">
+                                <div class="bg-yellow-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Lunch Break</h4>
+                                    <p class="text-sm text-gray-600">Cafeteria</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-yellow-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Lunch Break</h4>
+                                    <p class="text-sm text-gray-600">Cafeteria</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-yellow-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Lunch Break</h4>
+                                    <p class="text-sm text-gray-600">Cafeteria</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-yellow-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Lunch Break</h4>
+                                    <p class="text-sm text-gray-600">Cafeteria</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-yellow-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Lunch Break</h4>
+                                    <p class="text-sm text-gray-600">Cafeteria</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-600">1:00 - 2:00</td>
+                            <td class="px-6 py-4">
+                                <div class="bg-orange-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">History</h4>
+                                    <p class="text-sm text-gray-600">Mr. Brown</p>
+                                    <p class="text-xs text-gray-500">Room 103</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-purple-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">English</h4>
+                                    <p class="text-sm text-gray-600">Mrs. Wilson</p>
+                                    <p class="text-xs text-gray-500">Room 205</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Mathematics</h4>
+                                    <p class="text-sm text-gray-600">Mr. Johnson</p>
+                                    <p class="text-xs text-gray-500">Room 101</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Science</h4>
+                                    <p class="text-sm text-gray-600">Ms. Davis</p>
+                                    <p class="text-xs text-gray-500">Lab 2</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-purple-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">English</h4>
+                                    <p class="text-sm text-gray-600">Mrs. Wilson</p>
+                                    <p class="text-xs text-gray-500">Room 205</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-600">2:15 - 3:15</td>
+                            <td class="px-6 py-4">
+                                <div class="bg-red-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Physical Education</h4>
+                                    <p class="text-sm text-gray-600">Coach Smith</p>
+                                    <p class="text-xs text-gray-500">Gym</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Science</h4>
+                                    <p class="text-sm text-gray-600">Ms. Davis</p>
+                                    <p class="text-xs text-gray-500">Lab 2</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-orange-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">History</h4>
+                                    <p class="text-sm text-gray-600">Mr. Brown</p>
+                                    <p class="text-xs text-gray-500">Room 103</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-red-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">Physical Education</h4>
+                                    <p class="text-sm text-gray-600">Coach Smith</p>
+                                    <p class="text-xs text-gray-500">Gym</p>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="bg-orange-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800">History</h4>
+                                    <p class="text-sm text-gray-600">Mr. Brown</p>
+                                    <p class="text-xs text-gray-500">Room 103</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg mt-8">
+            <h3 class="text-lg font-bold mb-4 text-gray-800">Subject Legend</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 bg-blue-100 rounded"></div>
+                    <span class="text-sm text-gray-700">Mathematics</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 bg-green-100 rounded"></div>
+                    <span class="text-sm text-gray-700">Science</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 bg-purple-100 rounded"></div>
+                    <span class="text-sm text-gray-700">English</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 bg-orange-100 rounded"></div>
+                    <span class="text-sm text-gray-700">History</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 bg-red-100 rounded"></div>
+                    <span class="text-sm text-gray-700">Physical Education</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 bg-yellow-100 rounded"></div>
+                    <span class="text-sm text-gray-700">Lunch Break</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="school-script.js"></script>
+</body>
+</html>
