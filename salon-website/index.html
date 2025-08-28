@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elegant Beauty Salon - Professional hair styling, manicure, pedicure, spa treatments, and makeup services. Book your appointment today!">
+    <meta name="keywords" content="beauty salon, hair styling, manicure, pedicure, spa, makeup, beauty services">
+    <meta name="author" content="Elegant Beauty Salon">
+    
+    <meta property="og:title" content="Elegant Beauty Salon - Enhance Your Beauty, Elevate Your Confidence">
+    <meta property="og:description" content="Professional beauty services including hair styling, manicure, pedicure, spa treatments, and makeup. Book your appointment today!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/salon-hero.jpg">
+    
+    <title>Elegant Beauty Salon - Enhance Your Beauty, Elevate Your Confidence</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-poppins text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 transition-all duration-300 border-b border-gray-200/50 shadow-sm" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-spa text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-playfair font-bold text-gray-800">Elegant Beauty</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="hover:text-pink-500 transition-colors py-2 px-3 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pink-500 after:transition-all hover:after:w-full font-medium">Home</a>
+                    <a href="#about" class="hover:text-pink-500 transition-colors py-2 px-3 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pink-500 after:transition-all hover:after:w-full font-medium">About</a>
+                    <a href="#services" class="hover:text-pink-500 transition-colors py-2 px-3 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pink-500 after:transition-all hover:after:w-full font-medium">Services</a>
+                    <a href="#pricing" class="hover:text-pink-500 transition-colors py-2 px-3 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pink-500 after:transition-all hover:after:w-full font-medium">Pricing</a>
+                    <a href="#gallery" class="hover:text-pink-500 transition-colors py-2 px-3 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pink-500 after:transition-all hover:after:w-full font-medium">Gallery</a>
+                    <a href="#contact" class="hover:text-pink-500 transition-colors py-2 px-3 relative nav-link after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-pink-500 after:transition-all hover:after:w-full font-medium">Contact</a>
+                    <a href="#contact" class="ml-4 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-semibold py-2.5 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Book Appointment
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-pink-500 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 animate-fade-in">
+                <a href="#home" class="block py-3 px-4 hover:bg-gray-50 rounded-lg transition-colors font-medium">Home</a>
+                <a href="#about" class="block py-3 px-4 hover:bg-gray-50 rounded-lg transition-colors font-medium">About</a>
+                <a href="#services" class="block py-3 px-4 hover:bg-gray-50 rounded-lg transition-colors font-medium">Services</a>
+                <a href="#pricing" class="block py-3 px-4 hover:bg-gray-50 rounded-lg transition-colors font-medium">Pricing</a>
+                <a href="#gallery" class="block py-3 px-4 hover:bg-gray-50 rounded-lg transition-colors font-medium">Gallery</a>
+                <a href="#contact" class="block py-3 px-4 hover:bg-gray-50 rounded-lg transition-colors font-medium">Contact</a>
+                <a href="#contact" class="mt-4 ml-4 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 inline-flex items-center gap-2 shadow-lg">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center bg-cover bg-center bg-fixed relative" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 container mx-auto px-4 py-16 text-center">
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white px-6 py-3 rounded-full text-sm font-medium mb-8">
+                <i class="fas fa-star"></i>
+                <span>Professional Beauty Services</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6 text-white leading-tight">
+                Enhance Your <span class="bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent">Beauty</span><br>
+                Elevate Your <span class="bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent">Confidence</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+                Experience the ultimate in beauty and wellness with our expert stylists and premium services
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" class="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
+                    Book Appointment
+                </a>
+                <a href="#services" class="bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:bg-white/30 text-lg">
+                    View Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">About Our Salon</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Discover the story behind our commitment to beauty and excellence</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-playfair font-semibold text-gray-800">Where Beauty Meets Excellence</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        At Elegant Beauty Salon, we believe that every person deserves to feel beautiful and confident. 
+                        Our team of experienced professionals is dedicated to providing you with the highest quality beauty 
+                        services in a relaxing and welcoming environment.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        With over 10 years of experience in the beauty industry, we've perfected our craft and built a 
+                        reputation for excellence. We use only the finest products and latest techniques to ensure you 
+                        leave our salon feeling refreshed and beautiful.
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-award text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">10+ Years Experience</h4>
+                                <p class="text-gray-600">Professional expertise</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-heart text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Premium Products</h4>
+                                <p class="text-gray-600">Quality guaranteed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl p-1">
+                        <div class="bg-white rounded-2xl p-8 h-96 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-spa text-6xl text-pink-500 mb-4"></i>
+                                <p class="text-gray-600">Salon Interior Image</p>
+                                <p class="text-sm text-gray-500">(Placeholder for salon image)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive beauty services tailored to your needs</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hair Styling -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 border border-gray-100">
+                    <div class="h-16 w-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cut text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Hair Styling</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Professional haircuts, styling, coloring, and treatments to transform your look and boost your confidence.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Haircuts & Styling</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Hair Coloring</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Hair Treatments</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Manicure -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 border border-gray-100">
+                    <div class="h-16 w-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-sparkles text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Manicure</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Beautiful nail care services including manicures, nail art, and hand treatments for perfectly groomed hands.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Classic Manicure</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Gel Manicure</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Nail Art Design</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pedicure -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 border border-gray-100">
+                    <div class="h-16 w-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-spa text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Pedicure</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Relaxing foot care treatments including pedicures, foot massages, and nail care for healthy, beautiful feet.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Classic Pedicure</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Spa Pedicure</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Foot Massage</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Spa Treatments -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 border border-gray-100">
+                    <div class="h-16 w-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Spa Treatments</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Rejuvenating spa treatments including facials, body treatments, and relaxation therapies for total wellness.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Facial Treatments</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Body Treatments</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Relaxation Therapy</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Makeup -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 border border-gray-100">
+                    <div class="h-16 w-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Makeup</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Professional makeup services for special occasions, events, and everyday beauty enhancement.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Special Occasion</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Bridal Makeup</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Makeup Lessons</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Waxing -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8 border border-gray-100">
+                    <div class="h-16 w-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-feather text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Waxing</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Professional waxing services for smooth, hair-free skin using high-quality products and techniques.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Facial Waxing</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Body Waxing</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-pink-500 text-sm"></i>
+                            <span>Bikini Waxing</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Pricing Packages</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Choose the perfect package for your beauty needs</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Basic Package -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 relative">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Basic Package</h3>
+                        <div class="text-4xl font-bold text-gray-800 mb-2">$49</div>
+                        <p class="text-gray-600 mb-8">Perfect for quick touch-ups</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Haircut & Styling</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Basic Manicure</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Consultation</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">30 min session</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-full transition-all duration-300 text-center block">
+                        Choose Plan
+                    </a>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border-2 border-pink-500 relative transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Premium Package</h3>
+                        <div class="text-4xl font-bold text-gray-800 mb-2">$99</div>
+                        <p class="text-gray-600 mb-8">Complete beauty transformation</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Haircut & Styling</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Gel Manicure</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Spa Pedicure</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Facial Treatment</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">90 min session</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 text-center block transform hover:scale-105">
+                        Choose Plan
+                    </a>
+                </div>
+
+                <!-- Luxury Package -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 relative">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-playfair font-semibold mb-4 text-gray-800">Luxury Package</h3>
+                        <div class="text-4xl font-bold text-gray-800 mb-2">$149</div>
+                        <p class="text-gray-600 mb-8">Ultimate pampering experience</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Complete Hair Makeover</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Luxury Manicure & Pedicure</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Full Body Treatment</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">Professional Makeup</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-pink-500"></i>
+                            <span class="text-gray-700">120 min session</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-full transition-all duration-300 text-center block">
+                        Choose Plan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Our Gallery</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Take a look at our beautiful work and salon environment</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Items -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer gallery-item">
+                    <div class="aspect-square bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-cut text-4xl text-pink-500 mb-4"></i>
+                            <p class="text-gray-600">Hair Styling</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Hair Styling</h3>
+                            <p class="text-white/80">Professional haircuts and styling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer gallery-item">
+                    <div class="aspect-square bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-hand-sparkles text-4xl text-pink-500 mb-4"></i>
+                            <p class="text-gray-600">Manicure</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Manicure</h3>
+                            <p class="text-white/80">Beautiful nail care services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer gallery-item">
+                    <div class="aspect-square bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-spa text-4xl text-pink-500 mb-4"></i>
+                            <p class="text-gray-600">Spa Treatments</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Spa Treatments</h3>
+                            <p class="text-white/80">Relaxing wellness therapies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer gallery-item">
+                    <div class="aspect-square bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-palette text-4xl text-pink-500 mb-4"></i>
+                            <p class="text-gray-600">Makeup</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Makeup</h3>
+                            <p class="text-white/80">Professional makeup artistry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer gallery-item">
+                    <div class="aspect-square bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-leaf text-4xl text-pink-500 mb-4"></i>
+                            <p class="text-gray-600">Facial Care</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Facial Care</h3>
+                            <p class="text-white/80">Rejuvenating facial treatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer gallery-item">
+                    <div class="aspect-square bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-heart text-4xl text-pink-500 mb-4"></i>
+                            <p class="text-gray-600">Salon Interior</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-semibold mb-2">Salon Interior</h3>
+                            <p class="text-white/80">Our beautiful salon space</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Client Testimonials</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">What our clients say about their experience</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div id="testimonial-slider" class="relative">
+                    <div class="testimonial-slide active">
+                        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                            <div class="flex justify-center mb-6">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-lg text-gray-600 mb-6 italic">
+                                "Amazing experience! The staff is incredibly professional and the results exceeded my expectations. 
+                                I left feeling beautiful and confident. Highly recommend!"
+                            </p>
+                            <div class="flex items-center justify-center gap-4">
+                                <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                                    <p class="text-gray-600">Regular Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide hidden">
+                        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                            <div class="flex justify-center mb-6">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-lg text-gray-600 mb-6 italic">
+                                "The best salon I've ever been to! The attention to detail is incredible and the atmosphere is so relaxing. 
+                                My wedding makeup was absolutely perfect!"
+                            </p>
+                            <div class="flex items-center justify-center gap-4">
+                                <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Emily Davis</h4>
+                                    <p class="text-gray-600">Bridal Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide hidden">
+                        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                            <div class="flex justify-center mb-6">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-lg text-gray-600 mb-6 italic">
+                                "Professional service with a personal touch. The stylists really listen to what you want and deliver amazing results. 
+                                I've been coming here for years!"
+                            </p>
+                            <div class="flex items-center justify-center gap-4">
+                                <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Maria Rodriguez</h4>
+                                    <p class="text-gray-600">Loyal Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Dots -->
+                    <div class="flex justify-center mt-8 gap-2">
+                        <button class="testimonial-dot w-3 h-3 rounded-full bg-pink-500 transition-all duration-300" data-slide="0"></button>
+                        <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300" data-slide="1"></button>
+                        <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Contact Us</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Get in touch to book your appointment or ask any questions</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-playfair font-semibold mb-6 text-gray-800">Send us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Interest</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+                                <option value="">Select a service</option>
+                                <option value="hair-styling">Hair Styling</option>
+                                <option value="manicure">Manicure</option>
+                                <option value="pedicure">Pedicure</option>
+                                <option value="spa">Spa Treatments</option>
+                                <option value="makeup">Makeup</option>
+                                <option value="waxing">Waxing</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-playfair font-semibold mb-6 text-gray-800">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Address</h4>
+                                    <p class="text-gray-600">123 Beauty Street, Downtown<br>City, State 12345</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">(555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">info@elegantbeauty.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Hours</h4>
+                                    <p class="text-gray-600">Mon-Sat: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">Find Us</h4>
+                        <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map text-4xl text-gray-400 mb-4"></i>
+                                <p class="text-gray-600">Google Maps Embed</p>
+                                <p class="text-sm text-gray-500">(Placeholder for map)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="h-12 w-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-spa text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-playfair font-bold">Elegant Beauty</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Enhance your beauty and elevate your confidence with our professional beauty services. 
+                        We're committed to providing you with the highest quality treatments in a relaxing environment.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-pink-500 transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-pink-500 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-pink-500 transition-all duration-300">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Hair Styling</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Manicure</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Pedicure</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Spa Treatments</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Makeup</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Waxing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Elegant Beauty Salon. All rights reserved. | 
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a> | 
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
